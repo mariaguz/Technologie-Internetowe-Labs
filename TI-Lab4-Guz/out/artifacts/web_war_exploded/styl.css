@@ -1,0 +1,213 @@
+@charset "utf-8";
+
+html{
+    background: #AEB6BF;
+}
+
+#page-nav label, #hamburger {
+    display: none;
+}
+
+#kontener{
+    width: 90%;
+    /*background: #85929E;*/
+    margin: 0 auto;  /*u gory nan dole 0 a po prawej i lewej auto*/
+    font-family: "Tahoma", "sans-serif";
+    font-size: 10pt;
+    min-width: 400px;
+}
+
+#naglowek{
+    width: 100%;
+    height: 150pt;
+    background: #85929E;
+    text-align: center;
+    font-size: 200%;
+}
+
+#naglowek h1{
+    margin: 0;
+    padding-top: 70px;
+}
+
+#srodek{
+    /*background: #85929E;*/
+    margin-top: 10px;
+}
+
+#menu{
+    width:  150px;
+    /*background: #5D6D7F;*/
+    float: left;
+}
+
+#menu ul {
+    padding: 0;
+    margin: 0;
+
+}
+
+#menu li {
+    list-style: none;
+    font-size: 90%;
+
+}
+
+#menu a {
+    text-decoration: none;
+    color: black;
+    background: #D6DBDF;
+    margin-bottom: 5px;
+    padding: 4px;
+    text-align: center;
+    display: block;
+    transition: all 0.5s ease-in-out;
+
+}
+
+#menu a:hover {
+    color: gray;
+    background: #566573;
+}
+
+#menu #logout {
+    text-decoration: none;
+    color: black;
+    background: transparent;
+    margin-bottom: 5px;
+    padding: 4px;
+    text-align: center;
+}
+
+#menu #logout:hover{
+    color: gray;
+    background: transparent;
+}
+
+#login {
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+}
+
+#menu #login{
+    align-content: center;
+}
+
+#log, #pass {
+    width: 125px;
+    margin: 0 0 5px 0;
+}
+
+#tresc {
+    background: #5D6D7E;
+    text-align: justify;
+    padding: 5px;
+    min-height:  100px;
+    margin-bottom: 10px;
+    margin-left: 160px;
+
+}
+
+#stopka {
+    clear: both;
+    color: lightgray;
+    text-align: center;
+    background: #34495E;
+    margin-top: 100px;
+}
+
+
+#komunikat {
+    width: 50%;
+    margin: 0 auto;
+    border: 3px solid #333333;
+    text-align: center;
+    min-height: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width:  600px){
+    #menu{
+        width: 100%;
+        padding: 0;
+    }
+
+    #page-nav label, #hamburger {
+        display: none;
+    }
+
+    #newsy{
+        text-align: center;
+        margin-bottom: 5px ;
+    }
+    #tresc{
+        clear: both;
+        margin-left: 0;
+    }
+
+    #kontener{
+        min-width: 320px;
+    }
+}
+
+@media only screen and (max-width:  480px){
+
+    #page-nav{
+        text-align: center;
+        background: #34495E;
+    }
+    #page-nav label {
+        display: inline-block;
+        color: #fff;
+        background: #34495E ;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    /* Break down menu items into vertical */
+    #page-nav ul li {
+        display: block;
+    }
+    #page-nav ul li {
+        border-top: 1px solid #333;
+    }
+
+    /* Toggle show/hide menu on checkbox click */
+    #page-nav ul {
+        display: none;
+    }
+    #page-nav input:checked ~ ul {
+        display: block;
+    }
+
+    #menu{
+        width: 100%;
+        padding: 0;
+        background: #34495E;
+    }
+
+    #newsy{
+        text-align: center;
+        margin-bottom: 5px ;
+    }
+    #tresc{
+        clear: both;
+        margin-left: 0;
+    }
+
+    #kontener{
+        min-width: 320px;
+    }
+
+
+}

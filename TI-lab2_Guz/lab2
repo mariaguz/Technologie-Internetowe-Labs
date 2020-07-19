@@ -1,0 +1,41 @@
+package com.company;
+
+public class NumberSetTest  {
+    public NumberSetTest() throws Exception {
+        NumberSet numberSet = new NumberSet();
+        for(int i=0; i<100; ++i){
+            numberSet.add(i*2);
+        }
+
+        numberSet.showArr();
+
+        assert numberSet.getSize() == 100;
+
+        try{
+            numberSet.add(404);
+        }catch(Exception e){
+            System.out.println(e);
+        }
+        numberSet.showArr();
+
+        numberSet.divideAllElements(2);
+
+        numberSet.showArr();
+
+        for(int i = 3; i<=99; ++i) {
+            numberSet.remove(i);
+        }
+
+        numberSet.getSumOfElements();
+
+        numberSet.showArr();
+
+        System.out.println(numberSet.getSumOfElements());
+
+        numberSet.getRandomIndex();
+
+        numberSet.showArr();
+        System.out.println(numberSet.getSumOfElements());
+
+    }
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!--    ustawia kodowanie znaków -->
+    <meta charset="UTF-8">
+<!--    tutuł strony -->
+    <title>TI-Lab2</title>
+<!--    odnośnik do css -->
+    <link rel="stylesheet" type="text/css" href="styl.css"/>
+<!--    odnosniki do skryptów -->
+    <script type="text/javascript" src="skrypt.js"></script>
+    <script type="text/javascript" src="kwadratowe.js"></script>
+    <script type="text/javascript" src="liczbyPierwsze.js"></script>
+
+</head>
+
+
+<!-- setInterwal (nazwa funkcji, milisekundy)  -  odświezanie funkcji-->
+<body onload="funkcje(); zegarek(); setInterval(zegarek, 1000);" >
+<!-- onload - wszystkie funkcje które zostaną wykorzystane (skrypty ktore sie mają wykonać po załadowaniu strony)-->
+<div id="kontener">
+<!--    dividsion - podział strony na bloki, domyslnie display block (id ważne)-->
+    <div id="naglowek">
+<!--        div class wtedy w css  .nazwaklasy    div id wtedy w css  #id  -->
+        <h1>Maria Guz </h1>
+<!--        header 1 -->
+    </div>
+
+
+    <div id="srodek">
+
+
+        <div id="menu">
+            <div id="page-nav">
+                <label for="hamburger">&#9776;</label>
+<!--                label for ustawia znak (trzy linie) musi miec do czego sie odniesc -->
+
+                <input type="checkbox" id="hamburger"/>
+<!--                wklikamy checkbox -->
+            <ul>
+<!--                unordered list -->
+                <li><a href="index.html">Strona główna</a></li>
+<!--                a to skrót od chuj wie czego -->
+<!--                musi być do ul jest to element ul-->
+                <li><a href="kwadratowe.html">ax<sup>2</sup> + bx + c</a></li>
+                <li><a href="liczbyPierwsze.html">Liczby Pierwsze</a></li>
+
+            </ul>
+            </div>
+        </div>
+
+<!--            koniec nawigacji strony -->
+        <div id="tresc">
+
+        </div>
+
+        <div id="newsy">
+            <div id="news1">
+
+            </div>
+            <div id="news2">
+
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <div id="stopka">
+    </div>
+
+</div>
+</body>
+</html>
+
